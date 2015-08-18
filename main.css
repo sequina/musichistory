@@ -1,13 +1,14 @@
 /**Navagation**/
 
-.nav > li{
+.nav > li {
   float: center;
   list-style-type: none;
-  margin: 15px 5px
+  margin: 15px 5px;
 }
 
 .nav li {
   display: inline-block;
+  background: #FFB4B0;
 }
 
 .nav a {
@@ -15,35 +16,42 @@
   padding: 15px 10px;
 }
 
-.nav{
-  background: #FFB4B0
-} 
-.nav{
-  border: solid
+.nav {
+  border: solid;
+  width: 100%;
 }
 
 .nav{
-  width: 100%
+  position: fixed;
+  height: 35px;
 }
 
 
 /**Body**/
-body{
+body {
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 
 /**Genre Styling**/
-.songs{
-  background-color:#4DD7FA
+.songs {
+  background-color:#4DD7FA;
 }
 
-.Genre1{
+.genre input {
+  width: 40%;
   float: left;
 }
 
-.Genre2{
-  float: left;
+.clear {
+  clear: both;
+}
+
+
+/**Labeling Genre**/
+
+label {
+  width: 100%;
 }
 /**Right-Body Style Song Names**/
 
@@ -52,39 +60,66 @@ body{
   width: 80%; 
 }
 
-.SongNames{
-  background-color: #FEFAC0
+.SongNames {
+  background-color: #FFF5EE;
 }
 
-h1{
-  color:#785616
+h1 {
+  color:#785616;
 }
 
 ul{
-  color:#785616
+  color:#785616;
 }
 
-.SongNames{
-  width:65%
+.SongNames {
+  width:65%;
+}
+
+.moreSongs {
+  background-color: #F5FFFA;
 }
 
 /**Float**/
-.SongNames > h3{
-  float: right
+.SongNames > h3 {
+  float: right;
 }
 
-.SongLength{
+.SongLength {
   float:left;
-  width:30%
+  width:35%
+
 }
 
-
-.clear{
+.clear {
   clear:both;
 }
 
-li{
+li {
   list-style-type: none;
-  display: inline-block
+  display: inline-block;
 }
+
+/**BUTTONS**/
+.deleteoption {
+  float:right;
+}          
+
+
+
+
+
+/**BOLD**/
+#listOfSongs > h1 {
+  text:bold;
+}
+
+
+
+
+
+
+
+
+
 
