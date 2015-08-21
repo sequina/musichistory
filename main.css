@@ -1,27 +1,29 @@
 /**Navagation**/
 
-.nav > li {
+.navBar {
   float: center;
   list-style-type: none;
   margin: 15px 5px;
 }
 
-.nav li {
+li {
+  list-style-type: none;
+  display: inline-block;
+}
+
+.navBar {
   display: inline-block;
   background: #FFB4B0;
 }
 
-.nav a {
+.navBar {
   font-weight: 800;
   padding: 15px 10px;
 }
 
-.nav {
+.navBar {
   border: solid;
   width: 100%;
-}
-
-.nav{
   position: fixed;
   height: 35px;
 }
@@ -58,9 +60,6 @@ label {
 .SongNames {
   float: right;
   width: 80%; 
-}
-
-.SongNames {
   background-color: #FFF5EE;
 }
 
@@ -72,10 +71,6 @@ ul{
   color:#785616;
 }
 
-.SongNames {
-  width:65%;
-}
-
 .moreSongs {
   background-color: #F5FFFA;
 }
@@ -85,19 +80,13 @@ ul{
   float: right;
 }
 
-.SongLength {
+.bluePart {
   float:left;
-  width:35%
-
+  width:35%;
 }
 
 .clear {
   clear:both;
-}
-
-li {
-  list-style-type: none;
-  display: inline-block;
 }
 
 /**BUTTONS**/
