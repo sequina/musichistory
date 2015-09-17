@@ -1,68 +1,81 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link rel="stylesheet" type="text/css" href="main.css">
-  </head>
-  <body>
-  <div class = "navBar"
-    <ul class="nav arial">
-      <li><a href="#" class="selected">View Music</a></li> |
-      <li><a href="#">Add Music</a></li> |
-      <li><a href="#">Profile</a></li>
-    </ul>
+
+
+        <head>
+            <link rel="stylesheet" href="lib/bower_components/bootstrap/dist/css/bootstrap.min.css">
+            <link rel="stylesheet" type="text/css" href="styles/main.css">
+            <script data-main="javascripts/entry" src="lib/bower_components/requirejs/require.js"></script>
+
+      </head>
+
+
+    <body>
+        <div class = "navBar">
+          <ul class="nav nav-pills">
+              <li role="presentation" class="active"><a href="#">Home</a></li>
+              <li role="presentation"><a href="#">Profile</a></li>
+              <li role="presentation"><a href="#">Messages</a></li>
+        </ul>
   </div>
 
-  <div class ="bluePart">
-    <form action="html" method="POST">
-      <div class ="songLength">
-        <fieldset class="songs">
-          <label for="Song Length">Song Length</label>
-          <input type="range" name="song-range" min="5" max="10" step="0.5" value="21" />
-        </fieldset>
+    <div class ="bluePart">
+      <form action="html" method="POST">
+            <fieldset class="songs">
+              <label for="Song Length">Song Length</label>
+              <input type="range" name="song-range" min="5" max="10" step="0.5" value="21" />
+            </fieldset>
+    </div>
+
+    <div class = "artistAndAlbum">
+
+          <label for="Artist Name">Artist</label>
+              <input placeholder= "Options" list="Artist_Name"/>
+
+            <datalist id = "Artist_Name">
+                <option value="Christina Milan"></option>
+                <option value="Eminem"></option>
+                <option value="Taylor Swift"></option>
+                <option value="Kid Rock"></option>
+        </datalist>
+
+       <label for="Album Name">Album</label>
+          <input placeholder="Options" list="Album_Name"/>
+
+          <datalist id = "Album_Name">
+                <option value="1989"></option>
+                <option value="Phenomenal"></option>
+                <option value="Best Of"></option>
+                <option value="Born Free">  </option>
+          </datalist>
       </div>
 
-  <div class = "artistAndAlbum">   
-    <label for="Artist Name">Artist</label>
-    <input placeholder= "Options" list="Artist_Name"/>
-  <datalist id = "Artist_Name">
-      <option value="Christina Milan"></option>
-      <option value="Eminem"></option>
-      <option value="Taylor Swift"></option>
-      <option value="Kid Rock"></option>
-    </datalist> 
 
-    <label for="Album Name">Album</label>
-      <input placeholder="Options" list="Album_Name"/>
-  <datalist id = "Album_Name">
-      <option value="1989"></option>
-      <option value="Phenomenal"></option>
-      <option value="Best Of"></option>
-      <option value="Born Free">  </option>
-    </datalist>
-  </div>
-       
-  <div class = "genre">
-      <label for="genre">Genre:</label>
-      <input type="checkbox" name="genre" value="Rock and Roll" checked> Rock
-      <input type="checkbox" name="Classic Music" value="Classical" checked> Classical
-      <input type="checkbox" name="genre" value="Pop" checked> Pop
-      <input type="checkbox" name="genre" value="Jazz" checked> Jazz
-      <input type="checkbox" name="genre" value="Blues" checked> Blues   
-      <input type="checkbox" name="genre" value="Hip Hop" checked> Hip Hop
-  </div>
-</form>
-    
-  <div class="SongNames">
-    <div id ="listOfSongs">  
-    </div>
-  </div>
-<button id = "moreSongs">More Songs</button>
+      <div class = "genre">
+
+            <label for="genre">Genre:</label>
+                  <input type="checkbox" name="genre" value="Rock and Roll" checked> Rock
+                  <input type="checkbox" name="Classic Music" value="Classical" checked> Classical
+                  <input type="checkbox" name="genre" value="Pop" checked> Pop
+                  <input type="checkbox" name="genre" value="Jazz" checked> Jazz
+                  <input type="checkbox" name="genre" value="Blues" checked> Blues
+                  <input type="checkbox" name="genre" value="Hip Hop" checked> Hip Hop
+        </div>
+  </form>
+
+
+
+        <div class="SongNames"></div>
+        <div id ="songList"></div>
+
+
+
 
 
     <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
-    <script src= "./main.js"></script>
 
-  
-  </body>      
+
+
+  </body>
 </html>
 
