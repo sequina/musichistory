@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+        <head>
+            <link rel="stylesheet" href="lib/bower_components/bootstrap/dist/css/bootstrap.min.css">
+            <link rel="stylesheet" type="text/css" href="styles/main.css">
+            <link rel="stylesheet" type="addSong.html" href="./addSong.html">
+      </head>
+
+
+    <body>
+
+      <div class="collapse navbar-collapse" id="navbarLinks">
+        <ul class="nav navbar-nav">
+          <li><a href="index.html">List songs</a></li>
+          <li class="active"><a href="#">Add song</a></li>
+        </ul>
+        <form class="navbar-form navbar-right" role="search">
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Search songs">
+          </div>
+          <button type="submit" class="btn btn-default">Submit</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+<!-- Collect the nav links, forms, and other content for toggling -->
+  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">List songs <span class="sr-only">(current)</span></a></li>
+      <li><a href="./addSong.html">Add song</a></li>
+    </ul>
+  </div><!-- /.navbar-collapse -->
+</div><!-- /.container-fluid -->
+
+
+<div class="input-group">
+  <span class="input-group-addon" id="sizing-addon1">Album</span>
+  <input type="text" class="form-control" placeholder="Enter Album" aria-describedby="sizing-addon1">
+</div>
+
+<div class="input-group">
+  <span class="input-group-addon" id="sizing-addon1">Artist</span>
+  <input type="text" class="form-control" placeholder="Enter Artist" aria-describedby="sizing-addon1">
+</div>
+
+<div class="input-group input-group-lg">
+  <span class="input-group-addon" id="sizing-addon1">Title</span>
+  <input type="text" class="form-control" placeholder="Enter Title" aria-describedby="sizing-addon1">
+</div>
+
+<button id="addSong">Submit</button>
+
+
+</div>
+
+    <script data-main="javascripts/mainAdd" src="lib/bower_components/requirejs/require.js"></script>
+
+  </body>
+
+</html>
+

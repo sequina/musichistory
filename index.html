@@ -1,81 +1,78 @@
 <!DOCTYPE html>
 <html>
-
-
         <head>
             <link rel="stylesheet" href="lib/bower_components/bootstrap/dist/css/bootstrap.min.css">
             <link rel="stylesheet" type="text/css" href="styles/main.css">
-            <script data-main="javascripts/entry" src="lib/bower_components/requirejs/require.js"></script>
+
 
       </head>
 
 
     <body>
-        <div class = "navBar">
-          <ul class="nav nav-pills">
-              <li role="presentation" class="active"><a href="#">Home</a></li>
-              <li role="presentation"><a href="#">Profile</a></li>
-              <li role="presentation"><a href="#">Messages</a></li>
-        </ul>
-  </div>
 
-    <div class ="bluePart">
-      <form action="html" method="POST">
-            <fieldset class="songs">
-              <label for="Song Length">Song Length</label>
-              <input type="range" name="song-range" min="5" max="10" step="0.5" value="21" />
-            </fieldset>
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Brand</a>
+          </div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="#">List songs <span class="sr-only">(current)</span></a></li>
+              <li><a href="./addSong.html">Add song</a></li>
+            </ul>
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+      </nav>
+
+
+
+
+
+
+
+    <div class = "container-fluid">
+      <div class = "row">
+        <div class="col-sm-4">
+
+          <div class="dropdown">
+            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+              Dropdown
+              <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1" id="artists">
+            </ul>
+          </div>
+
+          <div class="dropdown">
+            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+              Dropdown
+              <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1" id="albums">
+            </ul>
+          </div>
+
+        </div>
+        <div class="col-sm-8">
+          <div id ="songList"></div>
+        </div>
+
+      </div>
     </div>
 
-    <div class = "artistAndAlbum">
 
-          <label for="Artist Name">Artist</label>
-              <input placeholder= "Options" list="Artist_Name"/>
-
-            <datalist id = "Artist_Name">
-                <option value="Christina Milan"></option>
-                <option value="Eminem"></option>
-                <option value="Taylor Swift"></option>
-                <option value="Kid Rock"></option>
-        </datalist>
-
-       <label for="Album Name">Album</label>
-          <input placeholder="Options" list="Album_Name"/>
-
-          <datalist id = "Album_Name">
-                <option value="1989"></option>
-                <option value="Phenomenal"></option>
-                <option value="Best Of"></option>
-                <option value="Born Free">  </option>
-          </datalist>
-      </div>
-
-
-      <div class = "genre">
-
-            <label for="genre">Genre:</label>
-                  <input type="checkbox" name="genre" value="Rock and Roll" checked> Rock
-                  <input type="checkbox" name="Classic Music" value="Classical" checked> Classical
-                  <input type="checkbox" name="genre" value="Pop" checked> Pop
-                  <input type="checkbox" name="genre" value="Jazz" checked> Jazz
-                  <input type="checkbox" name="genre" value="Blues" checked> Blues
-                  <input type="checkbox" name="genre" value="Hip Hop" checked> Hip Hop
-        </div>
-  </form>
-
-
-
-        <div class="SongNames"></div>
-        <div id ="songList"></div>
-
-
-
-
-
-    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
-
-
+    <script data-main="javascripts/entry" src="lib/bower_components/requirejs/require.js"></script>
 
   </body>
+
 </html>
 

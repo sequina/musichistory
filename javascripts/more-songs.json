@@ -5,10 +5,11 @@
             "artist": "Taylor Swift",
             "album": "1989"
         },
-
-            "title": "Can't feel my Face"
+        {
+            "title": "Can't feel my Face",
             "artist": "The Weekend",
-            "album": "???"
+            "album": "Unknown"
+        },
         {
             "title": "Cool for the Summer",
             "artist": "Demi Lovato",
@@ -19,9 +20,11 @@
             "artist": "Carrie Underwood",
             "album": "Blown Away"
         },
+        {
             "title": "Good Girl",
-            "artist": "Carrie Underwood"
+            "artist": "Carrie Underwood",
             "album": "Blown Away"
+        },
        {
             "title": "Bad Blood",
             "artist": "Taylor Swift",

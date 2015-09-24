@@ -1,8 +1,16 @@
 {{#each songs}}
-<div class = 'songItem'>
-  <h1> {{title}} </h1>
-  <h2> {{artist}} </h2>
-  <h3> {{album}} </h3>
-  <button class = 'deleteOption'>Delete This Song</button>
-</div>
+  <div class = 'songItem'>
+    <h3>
+      {{name}} ({{album}})
+        performed by {{artist}} on the album {{album.name}}
+      </h3>
+  {{!-- <button class = 'deleteOption'>Delete This Song</button> --}}
+
+      <div class="row">
+        <div class="col-sm-12">
+          <a href="#" id="delete#{{ key }}">Delete</a>
+        </div>
+      </div>
+
+  </div>
 {{/each}}
